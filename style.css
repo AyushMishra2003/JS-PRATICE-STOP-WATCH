@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     overflow: hidden;
     align-items: center;
-    justify-content: center;
+    background-color:darkgrey;
 }
 .time{
     display: flex;
@@ -23,6 +23,7 @@ body{
     font-size: 0.9rem;
 }
 main{
+    margin-top: 10rem;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -33,4 +34,20 @@ main{
     width: 30rem;
     border-radius: 1rem;
     box-shadow: 5px 10px rgb(20, 16, 33);
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 589px){
+    main{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 425px){
+    main{
+        width: 15rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
 }
